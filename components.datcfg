@@ -1,0 +1,11 @@
+variable "foo" {
+	default = "foo var default value"
+}
+
+component "foo" {
+	foo = "${var.foo}"
+}
+
+component "bar" {
+	bar = "a bar attr"
+}

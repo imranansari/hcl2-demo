@@ -1,0 +1,9 @@
+variable "controller_count" {
+	type = "string"
+	default = "3"
+}
+
+cluster "schu-first" {
+	controller_count = "${var.controller_count}"
+	worker_count = 2
+}
